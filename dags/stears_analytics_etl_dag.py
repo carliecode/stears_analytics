@@ -16,7 +16,7 @@ stears_analytics_dag = DAG(
     'stears_analytics_dag',
     default_args=default_args,
     description='A data pipe line for stears data anlytics requirements',
-    schedule='*/1 * * * *',
+    schedule=timedelta(seconds=30),
     catchup=False
 )
 

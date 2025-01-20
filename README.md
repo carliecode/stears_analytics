@@ -25,21 +25,23 @@ MinIO
 
 Setup and Installation
 ---------------------------
-Clone the repository: git clone https://github.com/carliecode/stears_analytics.git
-Install dependencies: pip install -r requirements.txt
-Configure MinIO:
-Set the following environment variables:
-MINIO_END_POINT (e.g., 127.0.0.1:9091)
-MINIO_ACCESS_KEY (e.g., minioadmin)
-MINIO_SECRET_KEY (e.g., minioadmin)
-MINIO_BUCKET (e.g., stears)
-Run Minio on the specified port: minio server --address ":9091" /data
-Create a bucket with the specified name in your Minio instance.
-Upload your data files (in CSV format) to the specified bucket.
-Build the Docker image: docker build -t your-image-name .
-Run the Docker container: docker run -p 8080:8080 your-image-name
+- Clone the repository: git clone https://github.com/carliecode/stears_analytics.git
+- Install dependencies: pip install -r requirements.txt
+- Configure MinIO:
+    - Set the following environment variables:
+        - MINIO_END_POINT (e.g., 127.0.0.1:9091)
+        - MINIO_ACCESS_KEY (e.g., minioadmin)
+        - MINIO_SECRET_KEY (e.g., minioadmin)
+        - MINIO_BUCKET (e.g., stears)
+        - Run Minio on the specified port: minio server --address ":9091" /data
+- Create a bucket with the specified name in your Minio instance.
+- Upload your data files (in CSV format) to the specified bucket.
+- Build the Docker image: docker build -t your-image-name .
+- Run the Docker container: docker run -p 8080:8080 your-image-name
 
 Running the ETL Pipeline
 ------------------------------
-The ETL pipeline is scheduled to run every 30 secs using Apache Airflow. The pipeline is triggered by the main.py script, which orchestrates the extraction, transformation, and loading processes. You can also trigger the DAG manually using the Airflow web interface.
-To verify the pipeline execution, check the Airflow logs and your system location for the generated chart.
+- The ETL pipeline is scheduled to run every 30 secs using Apache Airflow. 
+- The pipeline is triggered by the main.py script, which orchestrates the extraction, transformation, and loading processes. 
+- You can also trigger the DAG manually using the Airflow web interface.
+- To verify the pipeline execution, check the application logs in the /logs folder and your project folder location for the generated chart, chart.png.

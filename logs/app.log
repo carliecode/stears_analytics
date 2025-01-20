@@ -1,48 +1,48 @@
-2025-01-20 12:54:49,197 - stears_analytics_logger - INFO - **********************************************************
-2025-01-20 12:54:49,197 - stears_analytics_logger - INFO - ======================Program Starts======================
-2025-01-20 12:54:49,197 - stears_analytics_logger - INFO - Extractor module has started
-2025-01-20 12:54:49,200 - stears_analytics_logger - INFO - Listing objects in bucket: stears
-2025-01-20 12:54:49,208 - stears_analytics_logger - INFO - Found 1 CSV files and 0 JSON files in bucket: stears
-2025-01-20 12:54:49,208 - stears_analytics_logger - INFO - Loading CSV files
-2025-01-20 12:54:49,208 - stears_analytics_logger - INFO - Attempting to load file: deals_stage_tracker.csv from bucket: stears
-2025-01-20 12:54:49,216 - stears_analytics_logger - INFO - Successfully loaded CSV file: deals_stage_tracker.csv
-2025-01-20 12:54:49,216 - stears_analytics_logger - INFO - Successfully loaded all files from bucket
-2025-01-20 12:54:49,216 - stears_analytics_logger - INFO - Execution of extractor module has completed successfully
-2025-01-20 12:54:49,216 - stears_analytics_logger - INFO - Transformer module has started.
-2025-01-20 12:54:49,221 - stears_analytics_logger - INFO - Setting data transformation rules.
-2025-01-20 12:54:49,222 - stears_analytics_logger - INFO - Data rules set successfully.
-2025-01-20 12:54:49,222 - stears_analytics_logger - INFO - Starting to group data.
-2025-01-20 12:54:49,222 - stears_analytics_logger - INFO - Data grouped successfully.
-2025-01-20 12:54:49,233 - stears_analytics_logger - INFO - Transformer module finished successfully.
-2025-01-20 12:54:49,233 - stears_analytics_logger - INFO - Loader module has started.
-2025-01-20 12:54:49,233 - stears_analytics_logger - INFO - Starting to load chart data from CSV file.
-2025-01-20 12:54:49,235 - stears_analytics_logger - INFO - Chart data is loaded successfully.
-2025-01-20 12:54:49,235 - stears_analytics_logger - INFO - Starting to create chart.
-2025-01-20 12:54:49,237 - stears_analytics_logger - WARNING - Data is empty. No chart will be created.
-2025-01-20 12:54:49,237 - stears_analytics_logger - INFO - Loader module finished successfully.
-2025-01-20 12:54:49,237 - stears_analytics_logger - INFO - ======================Program Ends======================
-2025-01-20 12:54:49,237 - stears_analytics_logger - INFO - **********************************************************
-2025-01-20 12:54:54,012 - stears_analytics_logger - INFO - **********************************************************
-2025-01-20 12:54:54,012 - stears_analytics_logger - INFO - ======================Program Starts======================
-2025-01-20 12:54:54,012 - stears_analytics_logger - INFO - Extractor module has started
-2025-01-20 12:54:54,028 - stears_analytics_logger - INFO - Listing objects in bucket: stears
-2025-01-20 12:54:54,036 - stears_analytics_logger - INFO - Found 1 CSV files and 0 JSON files in bucket: stears
-2025-01-20 12:54:54,036 - stears_analytics_logger - INFO - Loading CSV files
-2025-01-20 12:54:54,036 - stears_analytics_logger - INFO - Attempting to load file: deals_stage_tracker.csv from bucket: stears
-2025-01-20 12:54:54,043 - stears_analytics_logger - INFO - Successfully loaded CSV file: deals_stage_tracker.csv
-2025-01-20 12:54:54,043 - stears_analytics_logger - INFO - Successfully loaded all files from bucket
-2025-01-20 12:54:54,043 - stears_analytics_logger - INFO - Execution of extractor module has completed successfully
-2025-01-20 12:54:54,043 - stears_analytics_logger - INFO - Transformer module has started.
-2025-01-20 12:54:54,043 - stears_analytics_logger - INFO - Setting data transformation rules.
-2025-01-20 12:54:54,057 - stears_analytics_logger - INFO - Data rules set successfully.
-2025-01-20 12:54:54,057 - stears_analytics_logger - INFO - Starting to group data.
-2025-01-20 12:54:54,060 - stears_analytics_logger - INFO - Data grouped successfully.
-2025-01-20 12:54:54,061 - stears_analytics_logger - INFO - Transformer module finished successfully.
-2025-01-20 12:54:54,062 - stears_analytics_logger - INFO - Loader module has started.
-2025-01-20 12:54:54,062 - stears_analytics_logger - INFO - Starting to load chart data from CSV file.
-2025-01-20 12:54:54,063 - stears_analytics_logger - INFO - Chart data is loaded successfully.
-2025-01-20 12:54:54,064 - stears_analytics_logger - INFO - Starting to create chart.
-2025-01-20 12:54:54,065 - stears_analytics_logger - WARNING - Data is empty. No chart will be created.
-2025-01-20 12:54:54,065 - stears_analytics_logger - INFO - Loader module finished successfully.
-2025-01-20 12:54:54,065 - stears_analytics_logger - INFO - ======================Program Ends======================
-2025-01-20 12:54:54,065 - stears_analytics_logger - INFO - **********************************************************
+2025-01-20 13:10:25,957 - stears_analytics_logger - INFO - **********************************************************
+2025-01-20 13:10:25,957 - stears_analytics_logger - INFO - ======================Program Starts======================
+2025-01-20 13:10:25,957 - stears_analytics_logger - INFO - Extractor module has started
+2025-01-20 13:10:25,973 - stears_analytics_logger - INFO - Listing objects in bucket: stears
+2025-01-20 13:10:25,996 - stears_analytics_logger - INFO - Found 1 CSV files and 0 JSON files in bucket: stears
+2025-01-20 13:10:25,996 - stears_analytics_logger - INFO - Loading CSV files
+2025-01-20 13:10:25,999 - stears_analytics_logger - INFO - Attempting to load file: deals_stage_tracker.csv from bucket: stears
+2025-01-20 13:10:26,015 - stears_analytics_logger - INFO - Successfully loaded CSV file: deals_stage_tracker.csv
+2025-01-20 13:10:26,017 - stears_analytics_logger - INFO - Successfully loaded all files from bucket
+2025-01-20 13:10:26,017 - stears_analytics_logger - INFO - Execution of extractor module has completed successfully
+2025-01-20 13:10:26,018 - stears_analytics_logger - INFO - Transformer module has started.
+2025-01-20 13:10:26,018 - stears_analytics_logger - INFO - Setting data transformation rules.
+2025-01-20 13:10:26,034 - stears_analytics_logger - INFO - Data rules set successfully.
+2025-01-20 13:10:26,034 - stears_analytics_logger - INFO - Starting to group data.
+2025-01-20 13:10:26,046 - stears_analytics_logger - INFO - Data grouped successfully.
+2025-01-20 13:10:26,047 - stears_analytics_logger - INFO - Transformer module finished successfully.
+2025-01-20 13:10:26,047 - stears_analytics_logger - INFO - Loader module has started.
+2025-01-20 13:10:26,047 - stears_analytics_logger - INFO - Starting to load chart data from CSV file.
+2025-01-20 13:10:26,047 - stears_analytics_logger - INFO - Chart data is loaded successfully.
+2025-01-20 13:10:26,047 - stears_analytics_logger - INFO - Starting to create chart.
+2025-01-20 13:10:26,387 - stears_analytics_logger - INFO - Chart created and saved successfully.
+2025-01-20 13:10:26,387 - stears_analytics_logger - INFO - Loader module finished successfully.
+2025-01-20 13:10:26,387 - stears_analytics_logger - INFO - ======================Program Ends======================
+2025-01-20 13:10:26,387 - stears_analytics_logger - INFO - **********************************************************
+2025-01-20 13:10:38,504 - stears_analytics_logger - INFO - **********************************************************
+2025-01-20 13:10:38,505 - stears_analytics_logger - INFO - ======================Program Starts======================
+2025-01-20 13:10:38,505 - stears_analytics_logger - INFO - Extractor module has started
+2025-01-20 13:10:38,512 - stears_analytics_logger - INFO - Listing objects in bucket: stears
+2025-01-20 13:10:38,535 - stears_analytics_logger - INFO - Found 1 CSV files and 0 JSON files in bucket: stears
+2025-01-20 13:10:38,535 - stears_analytics_logger - INFO - Loading CSV files
+2025-01-20 13:10:38,535 - stears_analytics_logger - INFO - Attempting to load file: deals_stage_tracker.csv from bucket: stears
+2025-01-20 13:10:38,554 - stears_analytics_logger - INFO - Successfully loaded CSV file: deals_stage_tracker.csv
+2025-01-20 13:10:38,555 - stears_analytics_logger - INFO - Successfully loaded all files from bucket
+2025-01-20 13:10:38,555 - stears_analytics_logger - INFO - Execution of extractor module has completed successfully
+2025-01-20 13:10:38,556 - stears_analytics_logger - INFO - Transformer module has started.
+2025-01-20 13:10:38,556 - stears_analytics_logger - INFO - Setting data transformation rules.
+2025-01-20 13:10:38,566 - stears_analytics_logger - INFO - Data rules set successfully.
+2025-01-20 13:10:38,566 - stears_analytics_logger - INFO - Starting to group data.
+2025-01-20 13:10:38,566 - stears_analytics_logger - INFO - Data grouped successfully.
+2025-01-20 13:10:38,583 - stears_analytics_logger - INFO - Transformer module finished successfully.
+2025-01-20 13:10:38,583 - stears_analytics_logger - INFO - Loader module has started.
+2025-01-20 13:10:38,583 - stears_analytics_logger - INFO - Starting to load chart data from CSV file.
+2025-01-20 13:10:38,583 - stears_analytics_logger - INFO - Chart data is loaded successfully.
+2025-01-20 13:10:38,583 - stears_analytics_logger - INFO - Starting to create chart.
+2025-01-20 13:10:38,583 - stears_analytics_logger - WARNING - Data is empty. No chart will be created.
+2025-01-20 13:10:38,583 - stears_analytics_logger - INFO - Loader module finished successfully.
+2025-01-20 13:10:38,583 - stears_analytics_logger - INFO - ======================Program Ends======================
+2025-01-20 13:10:38,583 - stears_analytics_logger - INFO - **********************************************************
