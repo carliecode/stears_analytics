@@ -10,7 +10,7 @@ def set_data_rules(data: pd.DataFrame) -> pd.DataFrame:
         data['engage_date'] = pd.to_datetime(data['engage_date'])
         name_filter = data['sales_agent'].str.contains('darcel|kami|jonathan', case=False)
         data = data[name_filter]
-        date_filter = data['close_date'].dt.year == 2017
+        date_filter = data['close_date'].dt.year == 2016
         data = data[date_filter]
         logger.info("Data rules set successfully.")
         return data
@@ -32,11 +32,11 @@ def group_data(data: pd.DataFrame) -> pd.DataFrame:
 
 def transform(data: pd.DataFrame) -> None:
     try:
-        logger.info("Execution of transformation module has started.")
+        logger.info("Transformer module has started.")
         data = set_data_rules(data)
         data = group_data(data)
         data.to_csv('.\data\grouped_data.csv', index=False)
-        logger.info("Transformation module finished successfully.")
+        logger.info("Transformer module finished successfully.")
     except Exception as e:
         logger.error(f"Error cleaning data: {e}")
         raise

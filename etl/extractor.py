@@ -60,12 +60,12 @@ def read_files_from_minio_bucket(client: Minio, bucket_name: str) -> pd.DataFram
 
 def extract() -> pd.DataFrame:
     try:
-        logger.info("Execution of extraction module has started")
+        logger.info("Extractor module has started")
 
-        endpoint = '127.0.0.1:9091'
+        endpoint = os.getenv('MINIO_END_POINT', '127.0.0.1:9091')
         access_key = os.getenv('MINIO_ACCESS_KEY', 'minioadmin')
         secret_key = os.getenv('MINIO_SECRET_KEY', 'minioadmin')
-        bucket_name = 'stears'
+        bucket_name = os.getenv('MINIO_BUCKET', 'stears')
 
         client = Minio(
             endpoint=endpoint, 
@@ -75,11 +75,8 @@ def extract() -> pd.DataFrame:
         )
 
         df = read_files_from_minio_bucket(client=client, bucket_name=bucket_name)
-        logger.info("Execution of extraction module has completed successfully")
+        logger.info("Execution of extractor module has completed successfully")
         return df
     except Exception as e:
         logger.error(f"An error occurred during the data extraction process in function 'execute': {e}")
         raise
-
-if __name__ == '__main__':
-    execute()

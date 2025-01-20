@@ -37,10 +37,10 @@ def create_chart(data: pd.DataFrame) -> None:
 
 def load() -> None:
     try:
-        logger.info("Execution of load module has started.")
+        logger.info("Loader module has started.")
         data = load_data()
         create_chart(data)
-        logger.info("Load module execution finished successfully.")
+        logger.info("Loader module finished successfully.")
     except Exception as e:
         logger.error(f"Error during execution: {e}")
         raise

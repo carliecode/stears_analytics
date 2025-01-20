@@ -1,3 +1,4 @@
+
 Stears Analytics ETL Project
 =====================================
 
@@ -17,27 +18,28 @@ The project architecture is illustrated in the architecture_diagram_stears_analy
 
 Requirements
 ---------------
-- Python 3.x
-- Apache Airflow (assumed to be running already)
-- Docker
-- MinoIO
+Python 3.x
+Apache Airflow (assumed to be running already)
+Docker
+MinIO
 
 Setup and Installation
 ---------------------------
-- Clone the repository: git clone https://github.com/carliecode/stears_analytics.git
-- Install dependencies: pip install -r requirements.txt
-- Configure MinoIO:
-    - Run Minio on port 9091 (default): minio server --address ":9091" /data
-    - If using a different port, update the MINIO_PORT variable in the Python scripts accordingly.
-    - Create a bucket named stears_analytics in your Minio instance.
-    - Upload your data files (in CSV format) to the stears_analytics bucket.
-- Build the Docker image: docker build -t your-image-name .
-- Run the Docker container: docker run -p 8080:8080 your-image-name
+Clone the repository: git clone https://github.com/carliecode/stears_analytics.git
+Install dependencies: pip install -r requirements.txt
+Configure MinIO:
+Set the following environment variables:
+MINIO_END_POINT (e.g., 127.0.0.1:9091)
+MINIO_ACCESS_KEY (e.g., minioadmin)
+MINIO_SECRET_KEY (e.g., minioadmin)
+MINIO_BUCKET (e.g., stears)
+Run Minio on the specified port: minio server --address ":9091" /data
+Create a bucket with the specified name in your Minio instance.
+Upload your data files (in CSV format) to the specified bucket.
+Build the Docker image: docker build -t your-image-name .
+Run the Docker container: docker run -p 8080:8080 your-image-name
 
 Running the ETL Pipeline
 ------------------------------
 The ETL pipeline is scheduled to run every 30 secs using Apache Airflow. The pipeline is triggered by the main.py script, which orchestrates the extraction, transformation, and loading processes. You can also trigger the DAG manually using the Airflow web interface.
-
 To verify the pipeline execution, check the Airflow logs and your system location for the generated chart.
-
-
